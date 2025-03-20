@@ -1,14 +1,9 @@
 package com.cem.accounts.dto;
 
-import lombok.Data;
+public record AccountsDto(
+        Long accountNumber,
+        String accountType,
+        String branchAddress) {
 
-@Data
-public class AccountsDto {
-
-    private Long accountNumber;
-
-    private String accountType;
-
-    private String branchAddress;
 
 }

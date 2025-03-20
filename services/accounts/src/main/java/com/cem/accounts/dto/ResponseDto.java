@@ -1,15 +1,8 @@
 package com.cem.accounts.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
-public class ResponseDto {
-
-    private String statusCode;
-
-    private String statusMsg;
+public record ResponseDto(
+        String statusCode,
+        String statusMsg) {
 
 
 }

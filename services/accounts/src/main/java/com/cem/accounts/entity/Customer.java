@@ -1,13 +1,17 @@
 package com.cem.accounts.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
-@Getter@Setter@ToString@AllArgsConstructor@NoArgsConstructor
 public class Customer extends BaseEntity {
 
     @Id
@@ -18,6 +22,8 @@ public class Customer extends BaseEntity {
 
     private String email;
     private String mobileNumber;
+
+
 
 
 
