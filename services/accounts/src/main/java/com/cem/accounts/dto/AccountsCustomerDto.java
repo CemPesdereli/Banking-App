@@ -14,8 +14,9 @@ public record AccountsCustomerDto(
                                   @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits")
                                   String mobileNumber,
 
-                                  @NotEmpty(message = "AccountNumber can not be null or empty")
-                                  @Pattern(regexp = "(^$|[0-9]{10})", message = "AccountNumber must be 10 digits")
+                                  @NotNull(message = "AccountNumber can not be null")
+                                  @Min(value = 1000000000L, message = "AccountNumber must be 10 digits")
+                                  @Max(value = 9999999999L, message = "AccountNumber must be 10 digits")
                                   Long accountNumber,
 
                                   @NotEmpty(message = "AccountType can not be null or empty")
