@@ -77,7 +77,7 @@ public class AccountsServiceImpl implements IAccountsService {
             Accounts accounts = accountsRepository.findById(accountsCustomerDto.accountNumber()).orElseThrow(
                     () -> new ResourceNotFoundException("Account", "AccountNumber", accountsCustomerDto.accountNumber().toString())
             );
-            // need validation for checking null for these values
+
             accounts.setAccountType(accountsCustomerDto.accountType());
             accounts.setBranchAddress(accountsCustomerDto.branchAddress());
             accountsRepository.save(accounts);
@@ -86,7 +86,7 @@ public class AccountsServiceImpl implements IAccountsService {
             Customer customer = customerRepository.findById(customerId).orElseThrow(
                     () -> new ResourceNotFoundException("Customer", "CustomerID", customerId.toString())
             );
-            // need validation for checking null for these values
+
             customer.setName(accountsCustomerDto.name());
             customer.setEmail(accountsCustomerDto.email());
             customer.setMobileNumber(accountsCustomerDto.mobileNumber());
