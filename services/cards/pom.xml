@@ -112,7 +112,7 @@
                 <version>3.4.2</version>
                 <configuration>
                     <to>
-                        <image>cempes/${project.artifactId}:s6</image>
+                        <image>cempesdereli/${project.artifactId}:s6</image>
                     </to>
                 </configuration>
             </plugin>
