@@ -8,10 +8,11 @@
         <option value="$PROJECT_DIR$/services/loans/pom.xml" />
         <option value="$PROJECT_DIR$/services/cards/pom.xml" />
         <option value="$PROJECT_DIR$/services/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/services/eurekaserver/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
