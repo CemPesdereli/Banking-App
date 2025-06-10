@@ -1,7 +1,6 @@
 package com.cem.accounts.mapper;
 
-import com.cem.accounts.dto.AccountsCustomerDto;
-import com.cem.accounts.dto.AccountsDto;
+import com.cem.accounts.dto.*;
 import com.cem.accounts.entity.Accounts;
 import com.cem.accounts.entity.Customer;
 
@@ -30,6 +29,16 @@ public class AccountsMapper {
                 accounts.getAccountNumber(),
                 accounts.getAccountType(),
                 accounts.getBranchAddress()
+        );
+    }
+    public static CustomerDetailsDto mapToCustomerDetailsDto(Customer customer, AccountsDto accountsDto, CardsDto cardsDto, LoansDto loansDto) {
+        return new CustomerDetailsDto(
+                customer.getName(),
+                customer.getEmail(),
+                customer.getMobileNumber(),
+                accountsDto,
+                cardsDto,
+                loansDto
         );
     }
 }
