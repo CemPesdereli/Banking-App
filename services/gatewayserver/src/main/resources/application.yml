@@ -21,6 +21,11 @@ info:
     description: "Eazy Bank Gateway Server Application"
     version: "1.0.0"
 
+logging:
+  level:
+    com:
+      cem:
+        gatewayserver: DEBUG
 
 management:
   endpoints:
