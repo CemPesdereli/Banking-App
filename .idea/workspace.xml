@@ -4,60 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70998a2d-c05c-43fd-bc42-a8309ed3ffc9" name="Changes" comment="Api gateway added">
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/FilterUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/RequestTraceFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/controller/FallbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/ICustomersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/ICustomersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/dto/CustomerDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/mapper/AccountsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/mapper/AccountsMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/CardsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/constants/CardsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/constants/CardsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/dto/CardsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/dto/CardsContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/dto/CardsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/dto/CardsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/dto/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/entity/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/entity/Cards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/exception/CardAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/exception/CardAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/mapper/CardsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/mapper/CardsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/repository/CardsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/repository/CardsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/service/ICardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/service/ICardsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/eazybytes/cards/service/impl/CardsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/service/impl/CardsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/test/java/com/eazybytes/cards/CardsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/test/java/com/cem/cards/CardsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/LoansApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/constants/LoansConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/constants/LoansConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/dto/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/dto/LoansContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/dto/LoansDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/dto/LoansDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/entity/Loans.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/entity/Loans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/mapper/LoansMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/mapper/LoansMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/repository/LoansRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/repository/LoansRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/service/ILoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/service/ILoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/eazybytes/loans/service/impl/LoansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/service/impl/LoansServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/test/java/com/eazybytes/loans/LoansApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/test/java/com/cem/loans/LoansApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/constants/LoansConstants.class" beforeDir="false" />
@@ -76,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/repository/LoansRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/service/ILoansService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/service/impl/LoansServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/loans/target/test-classes/com/eazybytes/loans/LoansApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,27 +56,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;CemPesdereli&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "CemPesdereli"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CemPesdereli/Banking-App.git&quot;,
-    &quot;accountId&quot;: &quot;da6ccb58-2ba1-4d85-8f39-8364fb41a260&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CemPesdereli/Banking-App.git",
+    "accountId": "30ceb342-0bd9-4d01-af6e-f0aefb11c752"
   }
-}</component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2yOftYkU5ju50FRRLWBOXyvcT0P" />
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2ydN12ZqW1gli6fSAB4yXyxfFxY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -122,27 +86,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.AccountsApplication.executor": "Debug",
-    "Spring Boot.CardsApplication (1).executor": "Debug",
     "Spring Boot.CardsApplication.executor": "Debug",
     "Spring Boot.ConfigserverApplication.executor": "Debug",
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.GatewayserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
-    "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/KingCodersVault/banking-app/services/gatewayserver/pom.xml",
+    "last_opened_file_path": "/Users/cem/KingCodersVault/Banking-App",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -153,6 +119,7 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="KtorApplicationConfigurationType" />
         <option value="MicronautRunConfigurationType" />
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
@@ -227,40 +194,23 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="70998a2d-c05c-43fd-bc42-a8309ed3ffc9" name="Changes" comment="" />
-      <created>1749710757124</created>
+      <changelist id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="" />
+      <created>1750160272030</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1749710757124</updated>
-      <workItem from="1749710757943" duration="6168000" />
-      <workItem from="1749813807347" duration="3905000" />
-      <workItem from="1749912106842" duration="231000" />
-      <workItem from="1750067263196" duration="6911000" />
+      <updated>1750160272030</updated>
+      <workItem from="1750160275312" duration="8743000" />
     </task>
-    <task id="LOCAL-00001" summary="Api gateway added">
-      <option name="closed" value="true" />
-      <created>1749912250171</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1749912250171</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Api gateway added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api gateway added" />
   </component>
 </project>

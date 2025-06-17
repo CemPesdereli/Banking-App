@@ -31,14 +31,10 @@ public class AccountsMapper {
                 accounts.getBranchAddress()
         );
     }
-    public static CustomerDetailsDto mapToCustomerDetailsDto(Customer customer, AccountsDto accountsDto, CardsDto cardsDto, LoansDto loansDto) {
+    public static CustomerDetailsDto mapToCustomerDetailsDto(Customer customer, AccountsDto accountsDto) {
         return new CustomerDetailsDto(
-                customer.getName(),
-                customer.getEmail(),
-                customer.getMobileNumber(),
-                accountsDto,
-                cardsDto,
-                loansDto
+                customer,
+                accountsDto
         );
     }
 }
