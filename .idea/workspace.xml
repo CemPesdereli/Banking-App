@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/controller/FallbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Circuit breaker added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/dto/CustomerDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/mapper/AccountsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/mapper/AccountsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/CardsFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/client/LoansFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/constants/LoansConstants.class" beforeDir="false" />
@@ -56,26 +47,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "CemPesdereli"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CemPesdereli&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CemPesdereli/Banking-App.git",
-    "accountId": "30ceb342-0bd9-4d01-af6e-f0aefb11c752"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CemPesdereli/Banking-App.git&quot;,
+    &quot;accountId&quot;: &quot;30ceb342-0bd9-4d01-af6e-f0aefb11c752&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2ydN12ZqW1gli6fSAB4yXyxfFxY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -84,35 +75,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.AccountsApplication.executor": "Debug",
-    "Spring Boot.CardsApplication.executor": "Debug",
-    "Spring Boot.ConfigserverApplication.executor": "Debug",
-    "Spring Boot.EurekaserverApplication.executor": "Debug",
-    "Spring Boot.GatewayserverApplication.executor": "Debug",
-    "Spring Boot.LoansApplication.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/cem/KingCodersVault/Banking-App",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cem/KingCodersVault/Banking-App&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -206,11 +197,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750160272030</updated>
-      <workItem from="1750160275312" duration="8743000" />
+      <workItem from="1750160275312" duration="8925000" />
+      <workItem from="1750256067704" duration="5181000" />
+      <workItem from="1750261287310" duration="19000" />
+      <workItem from="1750262510929" duration="113000" />
+      <workItem from="1750269124192" duration="2584000" />
+      <workItem from="1750273108730" duration="548000" />
+      <workItem from="1750273674413" duration="655000" />
     </task>
+    <task id="LOCAL-00001" summary="Circuit breaker added">
+      <option name="closed" value="true" />
+      <created>1750172237360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750172237360</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Circuit breaker added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circuit breaker added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

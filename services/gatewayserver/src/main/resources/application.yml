@@ -10,10 +10,23 @@ spring:
           discovery:
             locator:
               enabled: false
-              lowerCaseServiceId: true
+              lower-case-service-id: true
+          httpclient:
+            connect-timeout: 3000
+            response-timeout: 2s
 
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
 
 info:
   app:
@@ -27,19 +40,6 @@ logging:
       cem:
         gatewayserver: DEBUG
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    gateway:
-      access: unrestricted
-
-  info:
-    env:
-      enabled: true
-
 resilience4j.circuitbreaker:
   configs:
     default:
@@ -47,3 +47,4 @@ resilience4j.circuitbreaker:
       permittedNumberOfCallsInHalfOpenState: 2
       failureRateThreshold: 50
       waitDurationInOpenState: 10000
+
