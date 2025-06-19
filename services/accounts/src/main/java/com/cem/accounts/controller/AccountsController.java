@@ -3,6 +3,7 @@ package com.cem.accounts.controller;
 import com.cem.accounts.constants.AccountsConstants;
 import com.cem.accounts.dto.*;
 import com.cem.accounts.service.IAccountsService;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -22,6 +23,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.TimeoutException;
 
 @Tag(
         name = "CRUD REST APIs for Accounts in EazyBank",
@@ -193,10 +196,10 @@ public class AccountsController {
     )
     @Retry(name = "getBuildInfo", fallbackMethod = "getBuildInfoFallback")
     @GetMapping("/build-info")
-    public ResponseEntity<String> getBuildInfo(){
+    public ResponseEntity<String> getBuildInfo() {
         logger.debug("getBuildInfo() method invoked");
-        throw new NullPointerException();
-        //return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+
+        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
     }
 
     public ResponseEntity<String> getBuildInfoFallback(Throwable throwable){
@@ -225,9 +228,13 @@ public class AccountsController {
             )
     }
     )
+    @RateLimiter(name= "getJavaVersion", fallbackMethod = "getJavaVersionFallback")
     @GetMapping("/java-version")
     public ResponseEntity<String> getJavaVersion(){
         return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("java.home"));
+    }
+    public ResponseEntity<String> getJavaVersionFallback(Throwable throwable){
+        return ResponseEntity.status(HttpStatus.OK).body("Java 17");
     }
 
     @Operation(

@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Circuit breaker added">
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Retry added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/ResponseTraceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/constants/LoansConstants.class" beforeDir="false" />
@@ -117,7 +124,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoansApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayserverApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -177,8 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.LoansApplication" />
         <item itemvalue="Spring Boot.CardsApplication" />
+        <item itemvalue="Spring Boot.LoansApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +210,8 @@
       <workItem from="1750262510929" duration="113000" />
       <workItem from="1750269124192" duration="2584000" />
       <workItem from="1750273108730" duration="548000" />
-      <workItem from="1750273674413" duration="655000" />
+      <workItem from="1750273674413" duration="1427000" />
+      <workItem from="1750316859916" duration="6315000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -213,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750172237360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Retry added">
+      <option name="closed" value="true" />
+      <created>1750274795638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750274795638</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,17 +237,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Circuit breaker added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circuit breaker added" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java</url>
-          <line>248</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Retry added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retry added" />
   </component>
 </project>
