@@ -4,21 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Retry added">
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="RateLimiter added">
+      <change afterPath="$PROJECT_DIR$/services/docker-compose/observability/alloy/alloy-local-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker-compose/observability/grafana/datasource.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker-compose/observability/loki/loki-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker-compose/observability/prometheus/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/docker-compose/observability/tempo/tempo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/GatewayserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/ResponseTraceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/filters/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/constants/LoansConstants.class" beforeDir="false" />
@@ -82,35 +90,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cem/KingCodersVault/Banking-App&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AccountsApplication.executor": "Debug",
+    "Spring Boot.CardsApplication.executor": "Debug",
+    "Spring Boot.ConfigserverApplication.executor": "Debug",
+    "Spring Boot.EurekaserverApplication.executor": "Debug",
+    "Spring Boot.GatewayserverApplication.executor": "Debug",
+    "Spring Boot.LoansApplication.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/cem/KingCodersVault/Banking-App",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -124,7 +132,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayserverApplication">
+  <component name="RunManager" selected="Spring Boot.AccountsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -184,8 +192,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CardsApplication" />
         <item itemvalue="Spring Boot.LoansApplication" />
+        <item itemvalue="Spring Boot.CardsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +219,10 @@
       <workItem from="1750269124192" duration="2584000" />
       <workItem from="1750273108730" duration="548000" />
       <workItem from="1750273674413" duration="1427000" />
-      <workItem from="1750316859916" duration="6315000" />
+      <workItem from="1750316859916" duration="6923000" />
+      <workItem from="1751210116336" duration="249000" />
+      <workItem from="1751277137880" duration="4014000" />
+      <workItem from="1751282038860" duration="9984000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -229,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750274795638</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="RateLimiter added">
+      <option name="closed" value="true" />
+      <created>1750333197205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750333197205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +257,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Circuit breaker added" />
     <MESSAGE value="Retry added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retry added" />
+    <MESSAGE value="RateLimiter added" />
+    <option name="LAST_COMMIT_MESSAGE" value="RateLimiter added" />
   </component>
 </project>
