@@ -4,26 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Loki and Prometheus added">
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Tempo added">
+      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/config/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/java/com/cem/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/prod/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/qa/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/java/com/cem/loans/controller/LoansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
@@ -94,6 +89,7 @@
     "Maven.accounts [install].executor": "Run",
     "Maven.accounts [verify].executor": "Run",
     "Maven.cards [verify].executor": "Run",
+    "Maven.gatewayserver [clean,install].executor": "Run",
     "Maven.loans [verify].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -228,7 +224,10 @@
       <workItem from="1751282038860" duration="9984000" />
       <workItem from="1751316366752" duration="134000" />
       <workItem from="1751350517014" duration="3184000" />
-      <workItem from="1751462626615" duration="2428000" />
+      <workItem from="1751462626615" duration="2832000" />
+      <workItem from="1751524463798" duration="1225000" />
+      <workItem from="1751608504756" duration="3942000" />
+      <workItem from="1751898347441" duration="4505000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -262,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751316463935</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tempo added">
+      <option name="closed" value="true" />
+      <created>1751466051486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751466051486</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +280,7 @@
     <MESSAGE value="Retry added" />
     <MESSAGE value="RateLimiter added" />
     <MESSAGE value="Loki and Prometheus added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loki and Prometheus added" />
+    <MESSAGE value="Tempo added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tempo added" />
   </component>
 </project>
