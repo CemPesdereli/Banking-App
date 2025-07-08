@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="Tempo added">
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/config/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/java/com/cem/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="security added &#10;client credentials and authorization code flow using keycloak added">
+      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/dto/AccountsMsgDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/message/src/main/java/com/cem/message/dto/AccountsMsgDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/message/src/main/java/com/cem/message/functions/MessageFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/docker-compose/qa/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/qa/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/loans/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/services/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
@@ -49,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -104,6 +101,7 @@
     "Spring Boot.EurekaserverApplication.executor": "Debug",
     "Spring Boot.GatewayserverApplication.executor": "Debug",
     "Spring Boot.LoansApplication.executor": "Debug",
+    "Spring Boot.MessageApplication.executor": "Debug",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/cem/KingCodersVault/Banking-App",
     "node.js.detected.package.eslint": "true",
@@ -131,7 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Spring Boot.MessageApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -189,6 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="message" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cem.message.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.LoansApplication" />
@@ -227,7 +232,8 @@
       <workItem from="1751462626615" duration="2832000" />
       <workItem from="1751524463798" duration="1225000" />
       <workItem from="1751608504756" duration="3942000" />
-      <workItem from="1751898347441" duration="4505000" />
+      <workItem from="1751898347441" duration="4830000" />
+      <workItem from="1751990293320" duration="5898000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -269,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751466051486</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="security added &#10;client credentials and authorization code flow using keycloak added">
+      <option name="closed" value="true" />
+      <created>1751907647577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751907647577</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +295,7 @@
     <MESSAGE value="RateLimiter added" />
     <MESSAGE value="Loki and Prometheus added" />
     <MESSAGE value="Tempo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tempo added" />
+    <MESSAGE value="security added &#10;client credentials and authorization code flow using keycloak added" />
+    <option name="LAST_COMMIT_MESSAGE" value="security added &#10;client credentials and authorization code flow using keycloak added" />
   </component>
 </project>
