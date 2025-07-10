@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="rabbitmq added&#10;async communication for event driven">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/functions/AccountsFunctions.java" afterDir="false" />
+    <list default="true" id="4d2ae4b1-723c-47b7-bd12-3c9a4477a2b0" name="Changes" comment="accounts service message-in added">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/entity/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/IAccountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/java/com/cem/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/accounts/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/docker-compose/prod/docker-compose.yml" afterDir="false" />
@@ -86,49 +80,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.accounts [clean,install].executor": "Run",
-    "Maven.accounts [clean].executor": "Run",
-    "Maven.accounts [install].executor": "Run",
-    "Maven.accounts [verify].executor": "Run",
-    "Maven.cards [verify].executor": "Run",
-    "Maven.gatewayserver [clean,install].executor": "Run",
-    "Maven.loans [verify].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Debug",
-    "Spring Boot.ConfigserverApplication.executor": "Debug",
-    "Spring Boot.EurekaserverApplication.executor": "Debug",
-    "Spring Boot.GatewayserverApplication.executor": "Debug",
-    "Spring Boot.LoansApplication.executor": "Debug",
-    "Spring Boot.MessageApplication.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/cem/KingCodersVault/Banking-App",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.accounts [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cards [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.loans [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.MessageApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cem/KingCodersVault/Banking-App&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -247,7 +241,8 @@
       <workItem from="1751608504756" duration="3942000" />
       <workItem from="1751898347441" duration="4830000" />
       <workItem from="1751990293320" duration="6315000" />
-      <workItem from="1752155015909" duration="3976000" />
+      <workItem from="1752155015909" duration="5038000" />
+      <workItem from="1752163137751" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="Circuit breaker added">
       <option name="closed" value="true" />
@@ -305,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751998029104</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="accounts service message-in added">
+      <option name="closed" value="true" />
+      <created>1752159435430</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752159435430</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +322,7 @@
     <MESSAGE value="Tempo added" />
     <MESSAGE value="security added &#10;client credentials and authorization code flow using keycloak added" />
     <MESSAGE value="rabbitmq added&#10;async communication for event driven" />
-    <option name="LAST_COMMIT_MESSAGE" value="rabbitmq added&#10;async communication for event driven" />
+    <MESSAGE value="accounts service message-in added" />
+    <option name="LAST_COMMIT_MESSAGE" value="accounts service message-in added" />
   </component>
 </project>
